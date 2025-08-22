@@ -875,7 +875,7 @@ namespace AppGroup {
                     FileName = path,
                     Arguments = args,
                     UseShellExecute = true,
-                    WorkingDirectory = Path.GetDirectoryName(path); // startup folder
+                    WorkingDirectory = Path.GetDirectoryName(path) // startup folder
                 };
                 Process.Start(psi);
             }
