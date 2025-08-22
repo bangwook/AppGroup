@@ -874,7 +874,8 @@ namespace AppGroup {
                 ProcessStartInfo psi = new ProcessStartInfo {
                     FileName = path,
                     Arguments = args,
-                    UseShellExecute = true
+                    UseShellExecute = true,
+                    WorkingDirectory = Path.GetDirectoryName(path); // startup folder
                 };
                 Process.Start(psi);
             }
